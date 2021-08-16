@@ -59,7 +59,7 @@ body {
 /* LEFT PANEL STYLES */
 
 aside {
-  background: rgba(49, 49, 49, 0.5);
+  background: rgba(49, 49, 49, 0.75);
   border-right: 2px solid rgba(201, 201, 201, 0.5);
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;

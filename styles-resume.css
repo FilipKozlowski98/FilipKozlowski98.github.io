@@ -59,7 +59,7 @@ body {
 /* LEFT PANEL STYLES */
 
 aside {
-  background: rgba(49, 49, 49, 0.5);
+  background: rgba(49, 49, 49, 0.75);
   border-right: 2px solid rgba(201, 201, 201, 0.5);
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -238,8 +238,8 @@ main {
   align-items: center;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-  border: 2px solid rgb(192, 192, 192);
-  background: rgba(49, 49, 49, 0.5);
+  border: 2px solid rgba(201, 201, 201, 0.5);
+  background: rgba(49, 49, 49, 0.75);
   -webkit-box-shadow: -8px 16px 26px 3px rgba(0, 0, 0, 0.59);
   box-shadow: -8px 16px 26px 3px rgba(0, 0, 0, 0.59);
   color: white;
