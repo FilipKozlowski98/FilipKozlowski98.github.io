@@ -205,6 +205,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -218,14 +219,11 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  align-items: center;
 }
 
 .wrapperPL {
-  margin-right: 100px;
+  margin-bottom: 100px;
 }
 
 .button {
@@ -240,14 +238,16 @@ main {
   align-items: center;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-  padding: 25px 50px;
   border: 2px solid rgb(192, 192, 192);
   background: rgba(49, 49, 49, 0.5);
   -webkit-box-shadow: -8px 16px 26px 3px rgba(0, 0, 0, 0.59);
   box-shadow: -8px 16px 26px 3px rgba(0, 0, 0, 0.59);
   border-radius: 5px;
   color: white;
-  margin-bottom: 40px;
+  width: 200px;
+  height: 100px;
+  font-size: 40px;
+  margin-right: 50px;
 }
 
 .button:hover {
@@ -264,6 +264,14 @@ main {
   -o-transition: box-shadow 0.05s ease;
   transition: box-shadow 0.05s ease;
   transition: box-shadow 0.05s ease, -webkit-box-shadow 0.05s ease;
+}
+
+.download {
+  transition: color 0.01s linear;
+}
+
+.download:hover {
+  color: rgb(255, 255, 255);
 }
 
 /* SHOOTING STARS */
@@ -598,10 +606,6 @@ main {
 
   .secondNav__item {
     margin: 15px 30px;
-  }
-
-  .wrapperPL {
-    margin: 40px 0;
   }
 }
 
