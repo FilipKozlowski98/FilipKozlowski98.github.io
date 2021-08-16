@@ -104,7 +104,6 @@ nav {
 .mainNav__item a {
   display: block;
   padding: 10px 0;
-  border-radius: 5px;
   min-width: 126px;
 }
 

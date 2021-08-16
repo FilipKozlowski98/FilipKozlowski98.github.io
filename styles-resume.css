@@ -104,7 +104,7 @@ nav {
 .mainNav__item a {
   display: block;
   padding: 10px 0;
-  border-radius: 5px;
+  min-width: 126px;
 }
 
 .resume a {
@@ -242,7 +242,6 @@ main {
   background: rgba(49, 49, 49, 0.5);
   -webkit-box-shadow: -8px 16px 26px 3px rgba(0, 0, 0, 0.59);
   box-shadow: -8px 16px 26px 3px rgba(0, 0, 0, 0.59);
-  border-radius: 5px;
   color: white;
   width: 200px;
   height: 100px;
@@ -266,8 +265,22 @@ main {
   transition: box-shadow 0.05s ease, -webkit-box-shadow 0.05s ease;
 }
 
+.download svg {
+  -webkit-transition: color 0.1s linear;
+  -o-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+}
+
+.download svg path {
+  -webkit-transition: color 0.1s linear;
+  -o-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+}
+
 .download {
-  transition: color 0.01s linear;
+  -webkit-transition: color 0.1s linear;
+  -o-transition: color 0.1s linear;
+  transition: color 0.1s linear;
 }
 
 .download:hover {
