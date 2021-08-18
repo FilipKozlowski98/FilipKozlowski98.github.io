@@ -49,7 +49,7 @@ function timeouts2() {
 }
 
 function downloadHandler(event) {
-  if (counter == 0) {
+  if (counter === 0) {
     if (event.currentTarget.classList.contains("download1")) {
       firstButton.removeChild(firstArrow);
       firstButton.appendChild(swapArrow1);
@@ -79,10 +79,14 @@ function downloadHandler(event) {
 }
 
 function counterSubtract() {
-  counter--;
+  if (counter === 1) {
+    setTimeout(function () {
+      counter--;
+    }, 600);
+  }
 }
 
-firstButton.addEventListener("mouseover", downloadHandler);
-secondButton.addEventListener("mouseover", downloadHandler);
+firstButton.addEventListener("mouseenter", downloadHandler);
+secondButton.addEventListener("mouseenter", downloadHandler);
 firstButton.addEventListener("mouseleave", counterSubtract);
 secondButton.addEventListener("mouseleave", counterSubtract);
