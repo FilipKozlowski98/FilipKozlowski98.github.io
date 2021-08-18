@@ -271,26 +271,30 @@ main {
   transition: box-shadow 0.05s ease, -webkit-box-shadow 0.05s ease;
 }
 
-.download svg {
-  -webkit-transition: color 0.1s linear;
-  -o-transition: color 0.1s linear;
-  transition: color 0.1s linear;
-}
-
-.download svg path {
-  -webkit-transition: color 0.1s linear;
-  -o-transition: color 0.1s linear;
-  transition: color 0.1s linear;
-}
-
 .download {
-  -webkit-transition: color 0.1s linear;
-  -o-transition: color 0.1s linear;
-  transition: color 0.1s linear;
+  overflow: hidden;
+  height: 100px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.download:hover {
-  color: rgb(255, 255, 255);
+.movingArrow1,
+.movingArrow2 {
+  width: 62.5px;
+  height: 60px;
+  background-image: url("images/arrow-down.png");
+  background-position: center;
+  background-size: cover;
+  transform-origin: center;
+}
+
+.movingArrow2 {
+  position: relative;
+  top: -140px;
+  display: none;
 }
 
 /* SHOOTING STARS */
