@@ -10,6 +10,8 @@ swapArrow1.classList.add("movingArrow1");
 let swapArrow2 = document.createElement("div");
 swapArrow2.classList.add("movingArrow2");
 
+let counter = 0;
+
 function timeouts1() {
   setTimeout(function () {
     firstButton.removeChild(swapArrow1);
@@ -47,30 +49,40 @@ function timeouts2() {
 }
 
 function downloadHandler(event) {
-  if (event.currentTarget.classList.contains("download1")) {
-    firstButton.removeChild(firstArrow);
-    firstButton.appendChild(swapArrow1);
-    firstButton.appendChild(swapArrow2);
-    timeouts1();
-    swapArrow1.animate([{ transform: "translateY(80px)" }], {
-      duration: 250,
-    });
-    swapArrow2.animate([{ transform: "translateY(140px)" }], {
-      duration: 500,
-    });
-  } else if (event.currentTarget.classList.contains("download2")) {
-    secondButton.removeChild(secondArrow);
-    secondButton.appendChild(swapArrow1);
-    secondButton.appendChild(swapArrow2);
-    timeouts2();
-    swapArrow1.animate([{ transform: "translateY(80px)" }], {
-      duration: 250,
-    });
-    swapArrow2.animate([{ transform: "translateY(140px)" }], {
-      duration: 500,
-    });
-  } else window.alert("something went wrong");
+  if (counter == 0) {
+    if (event.currentTarget.classList.contains("download1")) {
+      firstButton.removeChild(firstArrow);
+      firstButton.appendChild(swapArrow1);
+      firstButton.appendChild(swapArrow2);
+      timeouts1();
+      swapArrow1.animate([{ transform: "translateY(80px)" }], {
+        duration: 250,
+      });
+      swapArrow2.animate([{ transform: "translateY(140px)" }], {
+        duration: 500,
+      });
+      counter++;
+    } else if (event.currentTarget.classList.contains("download2")) {
+      secondButton.removeChild(secondArrow);
+      secondButton.appendChild(swapArrow1);
+      secondButton.appendChild(swapArrow2);
+      timeouts2();
+      swapArrow1.animate([{ transform: "translateY(80px)" }], {
+        duration: 250,
+      });
+      swapArrow2.animate([{ transform: "translateY(140px)" }], {
+        duration: 500,
+      });
+      counter++;
+    } else window.alert("something went wrong");
+  }
 }
 
-firstButton.addEventListener("click", downloadHandler);
-secondButton.addEventListener("click", downloadHandler);
+function counterSubtract() {
+  counter--;
+}
+
+firstButton.addEventListener("mouseover", downloadHandler);
+secondButton.addEventListener("mouseover", downloadHandler);
+firstButton.addEventListener("mouseleave", counterSubtract);
+secondButton.addEventListener("mouseleave", counterSubtract);
