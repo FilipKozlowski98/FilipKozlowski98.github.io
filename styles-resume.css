@@ -6,9 +6,6 @@
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
   color: inherit;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 body {
@@ -105,6 +102,9 @@ nav {
   display: block;
   padding: 10px 0;
   min-width: 126px;
+  -webkit-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .resume a {
@@ -135,6 +135,9 @@ nav {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
+  -webkit-transition: width 0.3s ease;
+  -o-transition: width 0.3s ease;
+  transition: width 0.3s ease;
 }
 
 .hr--resume {
@@ -247,6 +250,9 @@ main {
   height: 100px;
   font-size: 40px;
   margin-right: 50px;
+  -webkit-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .button:hover {
