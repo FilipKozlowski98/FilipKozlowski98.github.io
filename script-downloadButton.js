@@ -28,6 +28,9 @@ function timeouts1() {
   setTimeout(function () {
     firstButton.appendChild(firstArrow);
   }, 500);
+  setTimeout(function () {
+    counter--;
+  }, 510);
 }
 
 function timeouts2() {
@@ -46,6 +49,9 @@ function timeouts2() {
   setTimeout(function () {
     secondButton.appendChild(secondArrow);
   }, 500);
+  setTimeout(function () {
+    counter--;
+  }, 510);
 }
 
 function downloadHandler(event) {
@@ -78,15 +84,5 @@ function downloadHandler(event) {
   }
 }
 
-function counterSubtract() {
-  if (counter === 1) {
-    setTimeout(function () {
-      counter--;
-    }, 600);
-  }
-}
-
 firstButton.addEventListener("mouseenter", downloadHandler);
 secondButton.addEventListener("mouseenter", downloadHandler);
-firstButton.addEventListener("mouseleave", counterSubtract);
-secondButton.addEventListener("mouseleave", counterSubtract);
