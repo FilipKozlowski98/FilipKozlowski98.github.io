@@ -566,8 +566,8 @@ main {
   .bodyWrapper {
     -ms-grid-columns: 100vw;
     grid-template-columns: 100vw;
-    -ms-grid-rows: 330px 1fr;
-    grid-template-rows: 330px 1fr;
+    -ms-grid-rows: 185px 1fr;
+    grid-template-rows: 185px 1fr;
   }
 
   .bodyWrapper > *:nth-child(1) {
@@ -601,20 +601,22 @@ main {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    height: calc(100vh - 330px);
+    height: calc(100vh - 185px);
     min-height: 640px;
   }
 
   .mainNav__item {
-    margin: 15px auto;
+    margin: 5px auto;
+    font-size: 15px;
   }
 
   .mainNav__item a {
     width: 50vw;
+    padding: 5px;
   }
 
   nav {
-    height: 330px;
+    height: 185px;
   }
 
   .secondNav {
@@ -628,7 +630,11 @@ main {
   }
 
   .secondNav__item {
-    margin: 15px 30px;
+    margin: 10px 30px;
+  }
+
+  .secondNav__thumbnail {
+    width: 25px;
   }
 }
 
@@ -636,8 +642,8 @@ main {
   .bodyWrapper {
     -ms-grid-columns: 100vw;
     grid-template-columns: 100vw;
-    -ms-grid-rows: 330px 1fr;
-    grid-template-rows: 330px 1fr;
+    -ms-grid-rows: 185px 1fr;
+    grid-template-rows: 185px 1fr;
   }
   .bodyWrapper > *:nth-child(1) {
     -ms-grid-row: 1;
@@ -649,7 +655,7 @@ main {
   }
 
   .secondNav__item {
-    margin: 15px;
+    margin: 10px 15px;
   }
 
   .button {
