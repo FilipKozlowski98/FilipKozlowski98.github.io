@@ -24,7 +24,7 @@ body {
   height: 100%;
   max-width: 1950px;
   min-width: 1850px;
-  min-height: 950px;
+  min-height: 900px;
   max-height: 1000px;
   display: flex;
   flex-direction: column;
