@@ -232,49 +232,49 @@ function setWind(wind) {
   if (wind > 348.75 || wind < 11.25) {
     return "N";
   }
-  if ((wind > 11.25) & (wind < 33.75)) {
+  if ((wind > 11.25) && (wind < 33.75)) {
     return "NNE";
   }
-  if ((wind > 33.75) & (wind < 56.25)) {
+  if ((wind > 33.75) && (wind < 56.25)) {
     return "NE";
   }
-  if ((wind > 56.25) & (wind < 78.75)) {
+  if ((wind > 56.25) && (wind < 78.75)) {
     return "ENE";
   }
-  if ((wind > 78.75) & (wind < 101.25)) {
+  if ((wind > 78.75) && (wind < 101.25)) {
     return "E";
   }
-  if ((wind > 101.25) & (wind < 123.75)) {
+  if ((wind > 101.25) && (wind < 123.75)) {
     return "ESE";
   }
-  if ((wind > 123.75) & (wind < 146.25)) {
+  if ((wind > 123.75) && (wind < 146.25)) {
     return "SE";
   }
-  if ((wind > 146.25) & (wind < 168.75)) {
+  if ((wind > 146.25) && (wind < 168.75)) {
     return "SSE";
   }
-  if ((wind > 168.75) & (wind < 191.25)) {
+  if ((wind > 168.75) && (wind < 191.25)) {
     return "S";
   }
-  if ((wind > 191.25) & (wind < 213.75)) {
+  if ((wind > 191.25) && (wind < 213.75)) {
     return "SSW";
   }
-  if ((wind > 213.75) & (wind < 236.25)) {
+  if ((wind > 213.75) && (wind < 236.25)) {
     return "SW";
   }
-  if ((wind > 236.25) & (wind < 258.75)) {
+  if ((wind > 236.25) && (wind < 258.75)) {
     return "WSW";
   }
-  if ((wind > 258.75) & (wind < 281.25)) {
+  if ((wind > 258.75) && (wind < 281.25)) {
     return "W";
   }
-  if ((wind > 281.25) & (wind < 303.75)) {
+  if ((wind > 281.25) && (wind < 303.75)) {
     return "NNE";
   }
-  if ((wind > 303.75) & (wind < 326.25)) {
+  if ((wind > 303.75) && (wind < 326.25)) {
     return "NNE";
   }
-  if ((wind > 326.25) & (wind < 348.75)) {
+  if ((wind > 326.25) && (wind < 348.75)) {
     return "NNW";
   }
 }
