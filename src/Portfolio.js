@@ -19,19 +19,22 @@ const PortfolioItem = styled.div`
   width: 30%;
   min-width: 300px;
   margin: 30px;
-  border: 3px solid ${(props) => props.theme.mainColor};
+  border: 2px solid ${(props) => props.theme.secondaryColor};
   background-color: ${(props) => props.theme.portfolioItemBackground};
   color: ${(props) => props.theme.mainColor};
+  box-shadow: -5px 5px 22px 5px #000000;
 `;
 const PortfolioTitle = styled.h3`
   font-size: 40px;
-  letter-spacing: 1px;
-  margin: 30px 0;
+  letter-spacing: 2px;
+  margin: 40px 0 50px 0;
+  min-width: 270px;
+  text-align: center;
 `;
 const PortfolioImageWrapper = styled.div`
   width: 100%;
   height: auto;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   img {
     width: 100%;
     height: 100%;
@@ -41,9 +44,9 @@ const PortfolioNavWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 30%;
+  width: 40%;
   min-width: 150px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 `;
 const PortfolioNavItem = styled.div`
   width: 50px;
@@ -61,7 +64,7 @@ const PortfolioNavItem = styled.div`
 
 export const Portfolio = (props) => {
   return (
-    <PortfolioWrapper>
+    <PortfolioWrapper id="portfolio">
       <PortfolioItem>
         <PortfolioTitle>Blackjack</PortfolioTitle>
         <PortfolioImageWrapper>

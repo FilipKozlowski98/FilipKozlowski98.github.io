@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ViewPortfolio } from "./ViewPortfolio";
 
 const OutsideWrapper = styled.div`
   width: 100%;
@@ -13,6 +14,7 @@ const OutsideWrapper = styled.div`
   align-items: center;
   justify-content: center;
   background-image: ${(props) => props.theme.backgroundImage};
+  position: relative;
 `;
 const FaceWrapper = styled.div`
   width: 350px;
@@ -23,6 +25,7 @@ const FaceWrapper = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    box-shadow: -5px 5px 22px 5px #000000;
   }
 `;
 const InsideWrapper = styled.div`
@@ -109,7 +112,6 @@ export const About = (props) => {
               target="_blank"
               rel="noreferrer"
             >
-              {" "}
               <img
                 src={
                   props.mode === "day"
@@ -122,6 +124,7 @@ export const About = (props) => {
           </SocialItem>
         </SocialWrapper>
       </InsideWrapper>
+      <ViewPortfolio mode={props.mode}></ViewPortfolio>
     </OutsideWrapper>
   );
 };

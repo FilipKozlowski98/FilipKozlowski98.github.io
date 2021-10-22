@@ -23,14 +23,14 @@ const lightTheme = {
   backgroundImage: 'url("./images/clouds.jpg")',
   mainColor: "black",
   secondaryColor: "#0d21b0",
-  portfolioBackground: "#4B9AFF",
+  portfolioBackground: "white",
   portfolioItemBackground: "white",
 };
 const darkTheme = {
   backgroundImage: 'url("./images/stars.jpg")',
   mainColor: "white",
   secondaryColor: "rgb(247, 250, 61)",
-  portfolioBackground: "#0F233D",
+  portfolioBackground: "#10131a",
   portfolioItemBackground: "black",
 };
 
