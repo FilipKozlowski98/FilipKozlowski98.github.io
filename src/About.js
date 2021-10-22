@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 const OutsideWrapper = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  min-height: 100vh;
+  min-width: 100%;
   background-size: cover;
   background-clip: border-box;
   background-repeat: no-repeat;
@@ -42,7 +44,7 @@ const SecondaryTitle = styled.h2`
 const Spacer = styled.div`
   width: 300px;
   height: 2px;
-  background-color: red;
+  background-color: ${(props) => props.theme.mainColor};
   margin: 45px 0;
 `;
 const SocialWrapper = styled.div`
@@ -70,7 +72,7 @@ export const About = (props) => {
     <OutsideWrapper>
       <InsideWrapper>
         <FaceWrapper>
-          <img src="./images/face.png" />
+          <img src="./images/face.png" alt="my face" />
         </FaceWrapper>
         <MainTitle>Hi, I'm Filip Kozłowski</MainTitle>
         <SecondaryTitle>FRONTEND DEVELOPER</SecondaryTitle>
@@ -84,7 +86,7 @@ export const About = (props) => {
             }}
             data-title-linkedin="LinkedIn"
           >
-            <img src="./images/li.png"></img>
+            <img src="./images/li.png" alt="linkedin"></img>
           </SocialItem>
           <SocialItem
             onClick={() => {
@@ -98,16 +100,25 @@ export const About = (props) => {
               src={
                 props.mode === "day" ? "./images/gh-b.png" : "./images/gh-w.png"
               }
+              alt="github"
             ></img>
           </SocialItem>
-          <SocialItem onClick={() => {}} data-title-email="Email me !">
-            <img
-              src={
-                props.mode === "day"
-                  ? "./images/mail-b.png"
-                  : "./images/mail-w.png"
-              }
-            ></img>
+          <SocialItem data-title-email="Email me !">
+            <a
+              href="mailto:f.kozlowski98@gmail.com?subject=Mail%20from%20my%20website"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              <img
+                src={
+                  props.mode === "day"
+                    ? "./images/mail-b.png"
+                    : "./images/mail-w.png"
+                }
+                alt="email"
+              ></img>
+            </a>
           </SocialItem>
         </SocialWrapper>
       </InsideWrapper>

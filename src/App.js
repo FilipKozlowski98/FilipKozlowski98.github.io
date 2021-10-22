@@ -4,23 +4,34 @@ import { About } from "./About";
 import { Portfolio } from "./Portfolio";
 import { Settings } from "./Settings";
 
-const MainWrapper = styled.div`
+const FixWrapper = styled.div`
+  overflow-x: hidden;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  overflow-x: hidden;
-  position: relative;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;
-
+const MainWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+`;
 const lightTheme = {
   backgroundImage: 'url("./images/clouds.jpg")',
   mainColor: "black",
   secondaryColor: "#0d21b0",
+  portfolioBackground: "#4B9AFF",
+  portfolioItemBackground: "white",
 };
 const darkTheme = {
   backgroundImage: 'url("./images/stars.jpg")',
   mainColor: "white",
   secondaryColor: "rgb(247, 250, 61)",
+  portfolioBackground: "#0F233D",
+  portfolioItemBackground: "black",
 };
 
 function App() {
@@ -28,11 +39,13 @@ function App() {
 
   return (
     <ThemeProvider theme={mode === "day" ? lightTheme : darkTheme}>
-      <MainWrapper>
-        <Settings changeMode={changeMode} mode={mode}></Settings>
-        <About mode={mode}></About>
-        <Portfolio></Portfolio>
-      </MainWrapper>
+      <FixWrapper>
+        <MainWrapper>
+          <Settings changeMode={changeMode} mode={mode}></Settings>
+          <About mode={mode}></About>
+          <Portfolio mode={mode}></Portfolio>
+        </MainWrapper>
+      </FixWrapper>
     </ThemeProvider>
   );
 }

@@ -31,6 +31,7 @@ export const Settings = (props) => {
     >
       <img
         src={props.mode === "day" ? "./images/sun.png" : "./images/moon.png"}
+        alt="change mode"
       />
     </SettingsWrapper>
   );
