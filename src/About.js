@@ -31,42 +31,66 @@ const FaceWrapper = styled.div`
   &:after {
     content: "";
     position: absolute;
-    top: -2.5px;
-    left: -2.5px;
-    width: 355px;
-    height: 355px;
+    top: -5px;
+    left: -5px;
+    width: 360px;
+    height: 360px;
     border: solid 5px white;
     box-sizing: border-box;
     border-radius: 50%;
+    @media (max-width: 560px) {
+      top: -2.5px;
+      left: -2.5px;
+      width: 205px;
+      height: 205px;
+      border: solid 2.5px white;
+    }
+  }
+  @media (max-width: 560px) {
+    width: 200px;
+    height: 200px;
   }
 `;
 const InsideWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 20px;
 `;
 const MainTitle = styled.h1`
   color: ${(props) => props.theme.mainColor};
   font-size: 50px;
   margin-bottom: 20px;
   letter-spacing: 1px;
+  @media (max-width: 560px) {
+    font-size: 30px;
+  }
 `;
 const SecondaryTitle = styled.h2`
   color: ${(props) => props.theme.secondaryColor};
   letter-spacing: 3px;
   font-size: 27.5px;
+  @media (max-width: 560px) {
+    font-size: 17px;
+  }
 `;
 const Spacer = styled.div`
   width: 300px;
   height: 2px;
   background-color: ${(props) => props.theme.mainColor};
   margin: 45px 0;
+  @media (max-width: 560px) {
+    width: 150px;
+  }
 `;
 const SocialWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   position: relative;
   left: -10px;
+  @media (max-width: 560px) {
+    left: 0;
+  }
 `;
 const SocialItem = styled.div`
   width: 100px;
@@ -79,6 +103,10 @@ const SocialItem = styled.div`
   }
   &:hover {
     transform: scale(1.35);
+  }
+  @media (max-width: 560px) {
+    width: 50px;
+    height: 50px;
   }
 `;
 

@@ -16,6 +16,11 @@ const SettingsWrapper = styled.div`
     height: 100%;
   }
   z-index: 10;
+  @media (max-width: 560px) {
+    width: 40px;
+    height: 40px;
+    right: 30px;
+  }
 `;
 
 export const Settings = (props) => {
