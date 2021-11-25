@@ -21,11 +21,23 @@ const FaceWrapper = styled.div`
   height: 350px;
   margin-bottom: 40px;
   align-self: center;
+  position: relative;
   img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     box-shadow: -5px 5px 22px 5px #000000;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: -2.5px;
+    left: -2.5px;
+    width: 355px;
+    height: 355px;
+    border: solid 5px white;
+    box-sizing: border-box;
+    border-radius: 50%;
   }
 `;
 const InsideWrapper = styled.div`
