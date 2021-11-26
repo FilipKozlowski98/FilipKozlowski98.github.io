@@ -68,7 +68,7 @@ export const Portfolio = (props) => {
       <PortfolioItem>
         <PortfolioTitle>Blackjack</PortfolioTitle>
         <PortfolioImageWrapper>
-          <img src="./images/blackjackPreview.png" alt="blackjack preview" />
+          <img src="./images/blackjackPreview.jpeg" alt="blackjack preview" />
         </PortfolioImageWrapper>
         <PortfolioNavWrapper>
           <PortfolioNavItem
@@ -107,7 +107,7 @@ export const Portfolio = (props) => {
       <PortfolioItem>
         <PortfolioTitle>Calculator</PortfolioTitle>
         <PortfolioImageWrapper>
-          <img src="./images/calculatorPreview.png" alt="calculator preview" />
+          <img src="./images/calculatorPreview.jpeg" alt="calculator preview" />
         </PortfolioImageWrapper>
         <PortfolioNavWrapper>
           <PortfolioNavItem
@@ -149,7 +149,10 @@ export const Portfolio = (props) => {
       <PortfolioItem>
         <PortfolioTitle>Weather App</PortfolioTitle>
         <PortfolioImageWrapper>
-          <img src="./images/weatherAppPreview.png" alt="weather app preview" />
+          <img
+            src="./images/weatherAppPreview.jpeg"
+            alt="weather app preview"
+          />
         </PortfolioImageWrapper>
         <PortfolioNavWrapper>
           <PortfolioNavItem
@@ -191,7 +194,10 @@ export const Portfolio = (props) => {
       <PortfolioItem>
         <PortfolioTitle>Finance App</PortfolioTitle>
         <PortfolioImageWrapper>
-          <img src="./images/financeAppPreview.png" alt="finance app preview" />
+          <img
+            src="./images/financeAppPreview.jpeg"
+            alt="finance app preview"
+          />
         </PortfolioImageWrapper>
         <PortfolioNavWrapper>
           <PortfolioNavItem
@@ -215,6 +221,48 @@ export const Portfolio = (props) => {
           <PortfolioNavItem
             onClick={() => {
               window.open("https://man-app-112a4.web.app", "_blank").focus();
+            }}
+            data-title-preview="Preview"
+          >
+            <img
+              src={
+                props.mode === "day"
+                  ? "./images/preview-b.png"
+                  : "./images/preview-w.png"
+              }
+              alt="preview"
+            ></img>
+          </PortfolioNavItem>
+        </PortfolioNavWrapper>
+      </PortfolioItem>
+
+      <PortfolioItem>
+        <PortfolioTitle>Mario Game</PortfolioTitle>
+        <PortfolioImageWrapper>
+          <img src="./images/marioPreview.jpeg" alt="mario game preview" />
+        </PortfolioImageWrapper>
+        <PortfolioNavWrapper>
+          <PortfolioNavItem
+            onClick={() => {
+              window
+                .open(
+                  "https://github.com/FilipKozlowski98/Mario-Game",
+                  "_blank"
+                )
+                .focus();
+            }}
+            data-title-smallgithub="Open github"
+          >
+            <img
+              src={
+                props.mode === "day" ? "./images/gh-b.png" : "./images/gh-w.png"
+              }
+              alt="github"
+            ></img>
+          </PortfolioNavItem>
+          <PortfolioNavItem
+            onClick={() => {
+              window.open("./Mario Game/index.html", "_blank").focus();
             }}
             data-title-preview="Preview"
           >
