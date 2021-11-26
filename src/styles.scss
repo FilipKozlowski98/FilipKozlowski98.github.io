@@ -24,6 +24,12 @@ a {
   opacity: 1;
   transition: all 0.1s ease 0.5s;
   visibility: visible;
+  @media (max-width: 560px) {
+    opacity: 0;
+  }
+  @media (max-height: 630px) {
+    opacity: 0;
+  }
 }
 [data-title-email]:after {
   content: attr(data-title-email);
