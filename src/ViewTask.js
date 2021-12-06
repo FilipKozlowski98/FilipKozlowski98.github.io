@@ -3,7 +3,7 @@ import styled from "styled-components";
 const ViewTaskWrapper = styled.div`
   position: absolute;
   left: 25px;
-  top: 25px;
+  top: 37px;
 `;
 const ViewTaskText = styled.div`
   font-size: 20px;
