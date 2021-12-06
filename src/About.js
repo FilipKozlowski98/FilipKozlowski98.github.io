@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ViewPortfolio } from "./ViewPortfolio";
+import { ViewTask } from "./ViewTask";
 
 const OutsideWrapper = styled.div`
   width: 100%;
@@ -165,6 +166,7 @@ export const About = (props) => {
         </SocialWrapper>
       </InsideWrapper>
       <ViewPortfolio mode={props.mode}></ViewPortfolio>
+      <ViewTask mode={props.mode}></ViewTask>
     </OutsideWrapper>
   );
 };
