@@ -1,0 +1,3 @@
+[submodule "public/recruitment-tasks"]
+	path = public/recruitment-tasks
+	url = https://github.com/FilipKozlowski98/recruitment-tasks.git

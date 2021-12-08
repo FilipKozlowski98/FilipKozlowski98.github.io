@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/public/recruitment-tasks/zadanie3/node_modules
 
 # testing
 /coverage

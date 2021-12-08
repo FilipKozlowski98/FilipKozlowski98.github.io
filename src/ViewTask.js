@@ -20,7 +20,7 @@ export const ViewTask = () => {
     <ViewTaskWrapper>
       <ViewTaskText
         onClick={() => {
-          window.open("./Recruitment/index.html", "_blank").focus();
+          window.open("./recruitment-tasks/index.html", "_blank").focus();
         }}
       >
         View current recruitment tasks.
