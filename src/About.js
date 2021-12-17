@@ -166,7 +166,7 @@ export const About = (props) => {
         </SocialWrapper>
       </InsideWrapper>
       <ViewPortfolio mode={props.mode}></ViewPortfolio>
-      <ViewTask mode={props.mode}></ViewTask>
+      {/* <ViewTask mode={props.mode}></ViewTask> */}
     </OutsideWrapper>
   );
 };
